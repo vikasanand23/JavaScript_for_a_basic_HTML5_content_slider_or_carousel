@@ -1,0 +1,121 @@
+body {
+    background-color: #e2e2e2;
+}
+header {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: #ccc;
+    overflow: hidden;
+    z-index: 2;
+    box-sizing: border-box;
+}
+.page-content {
+    padding-top: 50px;
+}
+.page-content .main-carousel {
+    width: 100%;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+.page-content .main-carousel .carousel-next,
+.page-content .main-carousel .carousel-prev {
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    background-color: rgba(200, 200, 200, 1);
+    cursor: pointer;
+    margin-top: -25px;
+}
+.page-content .main-carousel .carousel-next {
+    right: 0;
+}
+.page-content .main-carousel .carousel-prev {
+    left: 0;
+}
+.page-content .main-carousel .carousel-cells {
+    width: 99999px;
+    height: 100%;
+}
+.page-content .main-carousel .carousel-cells article {
+    width: 100vw;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+.three-columns {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+.three-columns aside {
+    margin: 0;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    display: table;
+}
+h3 {
+    margin: 15px 0px;
+}
+.column-content {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    position: absolute;
+    right: 10px;
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+}
+header nav ul {
+    overflow: hidden;
+}
+header nav li {
+    display: inline-block;
+    background-color: #e2e2e2;
+    color: #000645;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+header nav li:hover {
+    background-color: #000645;
+    color: #e2e2e2;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide-text h1 {
+    font-size: 1.5em;
+}
+.column-content h1 {
+    font-size: 1.5em;
+}
+.slide-text {
+    margin: 5px 0px auto;
+}
+article img {
+    background-size: 100% auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .three-columns {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
