@@ -66,19 +66,17 @@ h3 {
     padding: 10px;
 }
 header {
-    display: flex;
+	display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 nav {
     position: absolute;
     right: 10px;
 }
 .logo {
-    position: absolute;
-    left: 10px;
     font-size: 25px;
+	margin-left: 10px;
 }
 header nav ul {
     overflow: hidden;
@@ -111,6 +109,11 @@ article {
 }
 article img {
     background-size: 100% auto;
+}
+
+.list-block ul{
+	border: none;
+	list-style: none!important;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .three-columns {
